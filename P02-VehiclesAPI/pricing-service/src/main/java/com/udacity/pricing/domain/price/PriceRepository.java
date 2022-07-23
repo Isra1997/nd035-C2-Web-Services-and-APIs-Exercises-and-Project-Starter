@@ -1,8 +1,11 @@
 package com.udacity.pricing.domain.price;
 
-import org.springframework.stereotype.Repository;
+import com.udacity.pricing.service.PriceException;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-@Repository
-public class PriceRepository {
+
+
+public interface CrudPriceRepository extends CrudRepository<Price,Long> {
 
 }
